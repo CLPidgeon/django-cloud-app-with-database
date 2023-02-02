@@ -90,6 +90,7 @@ class Enrollment(models.Model):
 # The Question model
 class Question(models.Model):
     lesson_id = models.ForeignKey(Lesson, on_delete=models.CASCADE)
+    course = models.ForeignKey(Course, on_delete=models.CASCADE)
     question_text = models.TextField()
     grade = models.IntegerField()
     def is_get_score(self, selected_ids):
