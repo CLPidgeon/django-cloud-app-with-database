@@ -80,15 +80,15 @@
       {% if grade_percentage >= 80 %}
       <div class="alert alert-success">
         <p>
-          <b>Congratulations, {{user.first_name}}! </b>You have passed the exam
-          and completed the course with score {{grade}} / {{total}}
+          <b>Congratulations, {{user.username}}! </b>You have passed the exam
+          and completed the course with a score of {{grade}} / {{total}}
         </p>
       </div>
       {% else %}
       <div class="alert alert-danger">
         <p>
-          <b>Failed</b> Sorry, {{user.first_name}}! You have failed the exam
-          with a score of {{grade}} / {{total}}
+          <b>Failed</b> Sorry, {{user.username}}! You have failed the exam with
+          a score of {{grade}} / {{total}}
         </p>
       </div>
       <a
